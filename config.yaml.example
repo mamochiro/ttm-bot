@@ -1,0 +1,51 @@
+credentials:
+  username: "your_email@example.com"
+  password: "your_password"
+
+concert:
+  url: ""                             # Direct URL (takes priority over name)
+  name: ""                            # Search by name if no URL
+
+ticket:
+  num_tickets: 2
+  preferred_dates:
+    - "2024-12-01"
+    - "2024-12-02"
+  preferred_zones:                    # Priority order (first = most preferred)
+    - "FLOOR"
+    - "VIP"
+    - "A"
+    - "B"
+  preferred_seats: []                 # Specific seat numbers, empty = best available
+
+buyer:
+  first_name: ""
+  last_name: ""
+  email: ""
+  phone: ""
+  id_card: ""
+
+bot:
+  headless: false
+  check_interval: 3                   # seconds between queue checks
+  max_retries: 5
+  retry_delay: 2                      # seconds base delay (exponential backoff)
+  timeout: 30000                      # ms, Playwright default timeout
+  screenshot_on_error: true
+  screenshot_on_success: true
+
+proxy:
+  enabled: false
+  file: "proxy.txt"                   # one proxy per line: http://user:pass@host:port
+  rotate_on_error: true
+
+captcha:
+  mode: "manual"                      # "manual" | "2captcha"
+  api_key: ""
+  timeout: 120                        # seconds to wait for manual solve
+
+notifications:
+  webhook_url: ""                     # POST on success/failure
+  sound: true
+
+workers: 1                            # number of parallel browser instances

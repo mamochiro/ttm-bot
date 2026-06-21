@@ -1,0 +1,14 @@
+.env
+*.json
+!package.json
+cookies_*.json
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+.idea/
+.vscode/
+screenshots/
+logs/
+proxy.txt

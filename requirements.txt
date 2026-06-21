@@ -1,0 +1,8 @@
+playwright>=1.40.0
+python-dotenv>=1.0.0
+pyyaml>=6.0.1
+aiohttp>=3.9.0
+colorlog>=6.7.0
+requests>=2.31.0
+pillow>=10.0.0
+twocaptcha>=0.0.1
